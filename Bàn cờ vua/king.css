@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+}
+
+#king   {
+    padding: 100px;
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+    margin-left: 20%;
+    font-size:20px;
+
+
+}
+
+.white {
+    background-color: white;
+    padding: 40px;
+
+}
+
+.black {
+    background-color: black;
+    padding: 40px;
+}

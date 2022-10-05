@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The frist js</title>
+</head>
+<body>
+<p>
+    Select a new car from the list
+</p>
+<select id="myselection">
+    <option value="Audi">Audi</option>
+    <option value="BMW">BMW</option>
+    <option value="Volvo">Volvo</option>
+    <option value="VF">Vinfast</option>
+
+</select>
+<script !src="">
+
+    let selectedElement = document.getElementById(myselection);
+    selectedElement.addEventListener("change",changeFunction);
+
+    function changefunction() {
+        let selecValue = document.getElementById(myselection).value;
+        alert(selecValue)
+    }
+
+
+</script>
+</body>
+</html>
