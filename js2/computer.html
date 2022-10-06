@@ -1,10 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Computer</title>
+  <style>
+    #Nav {
+
+    }
+
+  </style>
+
 </head>
 <body>
-$END$
+<table id="Nav">
+  <tr>
+    <th colspan="4">Caculator</th>
+  </tr>
+  <tr>
+    <td colspan="2"><label ><input  type="text" name="number" id="number1" placeholder="number"></label></td>
+    <td colspan="2"><label ><input  type="text" name="number" id="number2" placeholder="number"></label></td>
+  </tr>
+  <tr>
+    <td>
+      <button onclick="Add()">Addition(+)</button>
+    </td>
+    <td>
+      <button onclick="Sub()">Subtraction(-)</button>
+    </td>
+    <td>
+      <button onclick="Mul()">Multiplication(*)</button>
+    </td>
+    <td>
+      <button onclick="Div()">Division</button>
+    </td>
+  </tr>
+</table>
+
+<p id="Result">
+  <h3> Result:</h3>
+</p>
+
+<script >
+  function Add() {
+    let Num1=document.getElementById('number1').value
+    let Num2=document.getElementById('number2').value
+
+    let Result = Number(Num1)+Number(Num2)
+
+    document.getElementById('Result').innerHTML=Result;
+  }
+
+  function Sub()  {
+    let Num1=document.getElementById('number1').value
+    let Num2=document.getElementById('number2').value
+
+    let Result = Number(Num1)-Number(Num2)
+
+    document.getElementById('Result').innerHTML=Result;
+  }
+
+  function Mul(){
+    let Num1=document.getElementById('number1').value
+    let Num2=document.getElementById('number2').value
+
+    let Result = Number(Num1)*Number(Num2)
+
+    document.getElementById('Result').innerHTML=Result;
+  }
+
+  function Div() {
+    let Num1 = document.getElementById('number1').value
+    let Num2 = document.getElementById('number2').value
+
+    let Result = Number(Num1) / Number(Num2)
+
+    document.getElementById('Result').innerHTML = Result;
+
+  }
+</script>
 </body>
 </html>
