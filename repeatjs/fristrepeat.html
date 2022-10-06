@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Bài toán năm nhuận</title>
 </head>
 <body>
-
+<script>
+    let year = parseInt(prompt('Enter the year'))
+    if (year%4==0) {
+        if (year%100==0) {
+            if (year%400==0) {
+                alert(year+'năm'+'là một năm nhuận')
+            } else {
+                alert(year+'năm'+'không phải một năm nhuận ')
+            }
+        } else {
+            alert(year+'năm' +'là một năm nhuận')
+        }
+    } else {
+        alert(year+'năm'+'không phải là một năm nhuận')
+    }
+</script>
 </body>
 </html>
