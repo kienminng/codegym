@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài check account của alert</title>
+</head>
+<body>
+<script>
+    let username =prompt("Who're you ?")
+    if (username=='Admin') {
+        let pass=prompt('Password?')
+        if (pass=='Master'){
+            alert('Welcome boss')
+        } else if (pass=null){
+            alert('Canceled')
+        } else {
+            alert("Wrong? Who the fuck are you?")
+        }
+    } else if (username==null) {
+        alert('Canceled')
+    } else {
+        alert('Who the fuck are you?:)))')
+    }
+</script>
+
+</body>
+</html>
