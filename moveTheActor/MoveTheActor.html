@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Di chuyển nhân vật</title>
+</head>
+<body>
+<img id="nobita" src="https://upload.wikimedia.org/wikipedia/vi/2/2c/Nobita.png" style="position:absolute;left:0; top:0;" height="100" width="80"/>
+<button type="button"value="moveLeft" onclick="leftArrowPressed()">Left</button>
+<button type="button" value="moveRight" onclick="rightArrowPressed()">Right</button>
+<button type="button" value="moveUp"    onclick="upArrowPressed()">Up</button>
+<button type="button" value="moveDown" onclick="downArrowPressed()">Down</button>
+<script >
+    let nobita = null
+    nobita = document.getElementById('nobita')
+
+  function init() {
+      nobita = document.getElementById('nobita')
+      nobita.style.position= 'relative'
+      nobita.style.left= '0px'
+      nobita.style.top= '0px'
+      nobita.style.bot
+  }
+
+  function upArrowPressed() {
+    nobita.style.top = parseInt(nobita.style.top) - 5 + 'px';
+  }
+  function downArrowPressed() {
+    nobita.style.top = parseInt(nobita.style.top) + 5 + 'px';
+  }
+  function leftArrowPressed() {
+    nobita.style.left = parseInt(nobita.style.left) - 5 + 'px';
+  }
+  function rightArrowPressed() {
+
+    nobita.style.left = parseInt(nobita.style.left) + 5 + 'px';
+  }
+
+  window.onload = init()
+
+</script>
+</body>
+</html>

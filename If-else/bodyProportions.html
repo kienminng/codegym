@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Body proportions</title>
+</head>
+<body>
+<h1>Your BMI</h1>
+<labyel >Your Weight: (kg)</labyel>
+<label for="Weight"></label><input type="text" id="Weight">
+<br>
+<br>
+<label>Your Hieght: (m)</label>
+<label for="Height"></label><input type="text" id="Height">
+<br>
+<br>
+<button onclick="myCheck()">Check Yourself</button>
+<p id="Result"></p>
+
+
+<script>
+  function myCheck(){
+    let a = +document.getElementById('Weight').value
+    let b = +document.getElementById('Height').value
+
+    let bmi = a/ (b^2)
+
+    let Result = ''
+
+    if (bmi < 18.5)
+      Result = 'Underweight'
+    else if (18.5<=bmi<=25.0)
+      Result = 'Normal'
+    else if (25.0<=bmi<=30.0)
+      Result = 'Overweight'
+    else if (30.0<= bmi)
+      Result = 'Obese'
+
+    document.getElementById('Result').innerHTML= 'Your BMI is ' + bmi + " it's " +Result
+  }
+</script>
+</body>
+</html>

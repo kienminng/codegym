@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Move the Ball</title>
-    <link rel="stylesheet" href="">
+    <style>
+        #nav {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
 </head>
 <body>
-<form>
+<form id="nav">
   <img  src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg" alt="Ball" id="Mball">
   <p>Click button below to move the img to right</p>
     <input type="button" value="Move Right" onclick="MoveRight()"></button>
     <input type="button" value="MoveLeft" onclick="MoveLeft()"></button>
+    <input type="button" value="MoveUp" onclick="MoveUp()"></button>
+    <input type="button" value="MoveDown" onclick="MoveDown()"></button>
+
 </form>
 
 <script>
@@ -21,25 +29,28 @@
         imgBall = document.getElementById('Mball')
         imgBall.style.position = 'relative'
         imgBall.style.left = '0px'
+        imgBall.style.top = '0px'
     }
-    function intotheball() {
-        imgBall = document.getElementById('Mball')
-        imgBall.style.position= 'relative'
-        imgBall.style.right = '0px'
-    }
+
 
     function MoveRight() {
         imgBall.style.left = parseInt(imgBall.style.left)+ 10 +'px'
     }
 
+    function  MoveLeft(){
+        imgBall.style.left = parseInt(imgBall.style.left) - 10 +'px'
+    }
 
+    function MoveUp() {
+        imgBall.style.top= parseInt(imgBall.style.top) + 10 + 'px'
+    }
 
-    function MoveLeft (){
-        imgBall.style.right = parseInt(imgBall.style.right) + 10 +'px'
+    function MoveDown() {
+        imgBall.style.top= parseInt(imgBall.style.top) - 10 + 'px'
     }
 
     window.onload = init()
-    window.onload = intotheball()
+
 
 
 </script>
