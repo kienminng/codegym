@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cấu trúc lặp đơn giản</title>
+</head>
+<body>
+
+<h2 style=>JavaScript Loops</h2>
+<label for="num"></label><input type="text" id="num">
+<button type="button" onclick="myFunction()">Get points</button>
+<p id="demo"></p>
+<script>
+  function myFunction() {
+    let num = document.getElementById('num').value
+    let total = 0;
+    let i;
+    for (i = 0; i <num ; i++) {
+      total= total+i;
+    }
+    document.getElementById("demo").innerHTML = 'tổng = ' + total;
+
+  }
+</script>
+</body>
+</html>

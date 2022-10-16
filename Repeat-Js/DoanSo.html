@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đoán số bất kì trong một dãy số </title>
+</head>
+<body>
+<script>
+  let num = prompt('enter the number ..')
+  let randomnum = Math.floor(Math.random()*num)
+  console.log(randomnum)
+  let checknum = prompt('Enter the number you thought ..')
+  let turn = 0
+  while (checknum != randomnum) {
+    turn ++;
+    if (turn==4) {
+      alert('mày cút ')
+      break
+    } else if (checknum < randomnum) {
+      alert('to nên dùng cái đầu đi')
+    } else {
+      alert('nhập lại đi ngu vler')
+    }
+    checknum = prompt('nhập số m nghĩ')
+  }
+
+  if (turn==4) {
+      document.write('hết lượt')
+  } else {
+      document.write('correct')
+  }
+</script>
+</body>
+</html>

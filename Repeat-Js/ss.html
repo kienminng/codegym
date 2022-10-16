@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="resuil"></p>
+<script>
+  let affernumber = 0;
+  let numbernow = 1;
+  let chuoi='' + affernumber + '<br>' + numbernow + '<br>'
+  for (let i = 0; i < 19; i++) {
+    nextnumber = numbernow + affernumber
+    affernumber = numbernow
+    numbernow = nextnumber
+    chuoi += nextnumber + '<br>'
+    if ((nextnumber%5)==0){
+      console.log('so chia het cho 5')
+    }
+    console.log(nextnumber)
+
+  }
+  document.getElementById('resuil').innerHTML= chuoi
+</script>
+
+</body>
+</html>

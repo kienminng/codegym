@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập mảng 2-1</title>
+</head>
+<body>
+<!--bài5+7-->
+<input type="text" id="number">
+<button type="button" name="add" value="number" onclick="Add_number()">Add</button>
+<button type="button" name="display" value="display" onclick="last()">Display</button>
+<p id="Result"></p>
+<script>
+  // let num = [1,11,20,6]  // bài 1-2-3-4
+  // let c =[]
+
+  // bai1
+
+  // for (let i=0;i<num.length;i++){
+  //   if (num[i]>10) {
+  //     c.push(num[i])
+  //   }
+  // }
+  // document.write('số lớn hơn 10 = ' + c)
+
+  // bai2-3
+
+  // let max=num[0]
+  // let palace = 0
+  // let tutol= 0
+  // let tb;
+  // for (let i=0;i<num.length;i++) {
+  //   if (num[i]>max){
+  //     max=num[i]
+  //     palace=i
+  //
+  //   }
+  //   tutol= tutol+ num[i]
+  //
+  //
+  //
+  // }
+  // tb = tutol/(num.length)
+  // document.write('số lớn nhất là ' + max + " và vị trí thứ " + palace + ' có tb = ' + tb  )
+
+  // bài4
+
+  // let frist = 0
+  // let last = num.length-1
+  // while (frist<last) {
+  //     let c = num[frist]
+  //     num[frist]=num[last]
+  //     num[last]=c
+  //     frist++
+  //     last--
+  // }
+  // document.write(num)
+
+  // bai5
+  //
+  // let x=0
+  // let array = Array()
+  // let c=[]
+  // function Add_number() {
+  //     array[x]=document.getElementById('number').value
+  //     alert(' số '+ array[x] + ' đã được thêm')
+  //     x++
+  //     document.getElementById('number').value =''
+  // }
+  //
+  //
+  // function last(){
+  //     for (let j =0 ; j<array.length;j++){
+  //         if (parseInt(array[j])<0) {
+  //             c.push(array[j])
+  //         }
+  //     }
+  //
+  //     let y = '</hr>'
+  //     for (let i=0 ;i<c.length ; i++){
+  //         y += ' số ' + i + '=' + c[i] + '</br>'
+  //     }
+  //
+  //     document.getElementById('Result').innerHTML=y
+  // }
+
+  // bài 6
+  // let a = [-1,3,-4,2,5,6,-2,5]
+  // for (let i=0;i<a.length;i++){
+  //     if (a[i]>0 ) {
+  //         document.write('số ' + a[i] + '  là số nguyên ' + '</br>')
+  //     } else {
+  //         document.write('số ' + a[i] + 'ko là số nguyên ' + '</br>' )
+  //     }
+  // }
+
+  // bài7
+  let a = [1,3,4,-1,5,6,7]
+  let x=0
+  let array = Array()
+  let c=[]
+  function Add_number() {
+      array[x] = document.getElementById('number').value
+      alert(' số ' + array[x] + ' đã được thêm')
+      x++
+      document.getElementById('number').value = ''
+  }
+
+  function last() {
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập về mảng 2</title>
+</head>
+<body>
+<!--<input type="number" id="add">-->
+<!--<button type="button" onclick="chek()">Check</button>-->
+<!--<br>-->
+<!--<p id="result"></p>-->
+
+<script>
+    // bài2
+
+    // let num=prompt('')
+    // let str = num.toString()
+    // let result = [str[0]]
+    // for (let i = 1; i < str.length; i++) {
+    //     if (str[i - 1] % 2 === 0 && str[i] % 2 === 0) {
+    //         result.push(' - ' + [str[i]])
+    //     } else {
+    //         result.push(str[i])
+    //     }
+    // }
+    // console.log(result.join(''))
+
+    // bài1
+
+    // let a = ["green","black","yellow"]
+    // console.log(a.toString())
+
+    // BÀi3
+
+    let a = "Python"
+    let up = "PYTHON"
+    let low = "python"
+    let b = []
+
+    for (let i=0;i<a.length;i++){
+        if (up.indexOf(a[i]) !== -1){
+            b.push(a.toLowerCase())
+        } else if (low.indexOf(a[i]) !== -1){
+            b.push(a[i].toUpperCase())
+        } else {
+            b.push(a[i])
+        }
+    }
+    console.log(b.join(''))
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

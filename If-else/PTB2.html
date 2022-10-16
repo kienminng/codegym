@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải Phương trình bậc 2</title>
+</head>
+<body>
+<form>
+
+    <br>Nhap gia tri a: <br>
+    <input type="text" id="a" value="">
+    <br> Nhap gia tri b: <br>
+    <input type="text" id="b" value="">
+    <br>Nhap gia tri c: <br>
+    <input type="text" id="c" value="">
+    <br>Đáp số:
+    <button type="button" name="check" onclick="giai()" >Check</button>
+    <p id="Result"></p>
+
+</form>
+<script >
+ function giai() {
+   let a = document.getElementById('a').value
+   let b = document.getElementById('b').value
+   let c = document.getElementById('c').value
+   let x=-c/b
+
+   let x1=-b/(2*a)
+
+   let delta = b*b-4*a*c
+
+   let x2= (-b-Math.sqrt(delta))/(2*a);
+   let x3 = (-b+Math.sqrt(delta))/(2*a);
+
+
+
+
+   if (a==0) {
+       document.getElementById('Result').innerHTML= 'phương trình vô số nghiệm'
+     if (a==0 && b==0 && c!=0 ) {
+         document.getElementById('Result').innerHTML= 'phương trình vô  nghiệm'
+     } else if (a==0 && b!=0 ) {
+         document.getElementById('Result').innerHTML= 'phương trình có nghiệm = ' +x
+     }
+   } else if (a !=0  ) {
+     if (delta==0) {
+       document.getElementById('Result').innerHTML=' phương trình có nghiệm kép' +x1
+     } else if (delta<0) {
+       document.getElementById('Result').innerHTML='phương trình vô nghiệm'
+     } else {
+       document.getElementById('Result').innerHTML='phương trình có 2 nghiệm'+x2 +'và'+x3
+     }
+
+   }
+ }
+
+
+</script>
+
+</body>
+</html>

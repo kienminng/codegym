@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài toán luỹ thừa</title>
+
+</head>
+<body>
+<h1>Check giai thừa</h1>
+<label><input type="text" id="num" placeholder="Enter number ..."></label>
+<button type="button" onclick="factorial()">Check</button>
+<p id="result-2"></p>
+<script>
+  function factorial() {
+    let  num = document.getElementById('num').value
+    let  factorialResult = 1;
+    for (let i = 1; i <= num; i++) {
+      factorialResult *= i;
+    }
+    document.getElementById("result-2").innerHTML = factorialResult;
+  }
+
+</script>
+
+</body>
+</html>

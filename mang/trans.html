@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ Điển</title>
+</head>
+<body>
+<input type="text" id="demo">
+<button type="button" onclick="Trans()">Dịch</button>
+<p id="R"></p>
+<script>
+  function Trans() {
+    let e = ["sky","blue","green"]
+    let v = ["bầu trời","buồn","màu xanh"]
+    let l = document.getElementById('demo').value
+    let place_e=0
+    let b = ''
+    for (let i= 0 ;i < e.length;i++){
+      if (l==e[i]){
+        place_e=i
+        for (let j = 0; j < v.length ; j++) {
+          if (place_e==j) {
+            b=v[j]
+          }
+        }
+      }
+    }
+    document.getElementById('R').innerHTML=b
+  }
+</script>
+</body>
+</html>

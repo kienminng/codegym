@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d</title>
+</head>
+<body>
+<input type="text" id="demo">
+<button type="button" onclick="check()">check</button>
+<div id="r"></div>
+<script>
+  // let a =[1,23,4,6,7,8]
+  // let x = document.getElementById('demo').value
+  function check() {
+    let a =[1,23,4,6,7,8]
+    let x = document.getElementById('demo').value
+    let c = parseInt(x)
+    for ( let i=0 ; i <a.length; i++) {
+      if (i==c) {
+        a.splice(i,1)
+      }
+    }
+    document.getElementById('r').innerHTML=a
+    console.log(a)
+  }
+</script>
+</body>
+</html>

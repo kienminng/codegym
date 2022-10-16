@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm Max</title>
+</head>
+<body>
+<script>
+  let a =[3,10,2,4,7,6]
+  let max = a[0]
+  let place = 0
+  for (let i=0 ; i<a.length;i++){
+    if (a[i]>max){
+      max=a[i]
+      place=i
+    }
+  }
+  alert('max= ' + max + ' ở vị trí thứ ' + place)
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check tuổi vào lớp 10</title>
+</head>
+<body>
+<h3>Check tuổi vào lớp 10</h3>
+<labyel><input type="text" id="old" name="tuổi" placeholder="Nhập số tuổi"></labyel>
+<br>
+<button type="button" onclick="StudentOld()" name="chek">Check</button>
+<p id="Result"></p>
+<script >
+  function StudentOld() {
+    let num = document.getElementById('old').value
+    if (num>16) {
+      document.getElementById('Result').innerHTML='học sinh đủ tuổi vào lớp 10 '
+    } else {
+      document.getElementById('Result').innerHTML='học sinh ko đủ điều kiện vào lớp 10'
+    }
+  }
+</script>
+</body>
+</html>

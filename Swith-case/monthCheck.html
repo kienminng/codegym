@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra tháng</title>
+</head>
+
+<body>
+
+
+<h1>Kiểm tra số ngày trong tháng</h1>
+<label><input type="text" id="Month" min="1" max="12" placeholder="Nhập tháng ghi bằng sô"></label>
+<label><button type="button" onclick="myMonth()">check </button> </label>
+<p id="Result"></p>
+
+<script>
+    let thang_1 = "1"
+    let thang_2 = "2"
+    let thang_3 = '3'
+    let thang_4 = "4"
+    let thang_5 = "5"
+    let thang_6 = "6"
+    let thang_7 = "7"
+    let thang_8 = "8"
+    let thang_9 = "9"
+    let thang_10 = "10"
+    let thang_11 = "11"
+    let thang_12 = "12"
+
+
+    function myMonth() {
+        let Month = document.getElementById('Month').value
+
+        let Result = ''
+
+        switch (Month) {
+            case thang_2:
+                document.getElementById('Result').innerHTML='tháng ' + Month + ' có 28 or 29 ngày '
+                break;
+            case thang_4:
+            case thang_6:
+            case thang_9:
+            case thang_11:
+                document.getElementById('Result').innerHTML='tháng '+ Month+ ' có 30 ngày'
+                break;
+            default :
+                document.getElementById('Result').innerHTML='tháng ' + Month + ' có 31 ngày'
+
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>JS Bin</title>
+</head>
+
+<body style="padding: 50px">
+
+<input type="text" id="number">
+<button type="button" name="add" value="number" onclick="Add_number()">Add</button>
+<button type="button" name="display" value="display" onclick="last()">Display</button>
+<p id="Result"></p>
+<script>
+  let x=0
+  let array = Array()
+  function Add_number() {
+    array[x]=document.getElementById('number').value
+    alert(' số '+ array[x] + ' đã được thêm')
+    x++
+    document.getElementById('number').value =''
+  }
+
+  function last(){
+    let y = '</hr>'
+    for (let i=0 ;i<array.length ; i++){
+      y += ' số ' + i + '=' + array[i] + '</br>'
+    }
+    document.getElementById('Result').innerHTML=y
+  }
+</script>
+</body>
+</html>
